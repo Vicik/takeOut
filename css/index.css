@@ -1,192 +1,36 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body{
-	font: 12px "微软雅黑",Arial,Helvetica,sans-serif;
-}
-/*超链接的通用样式*/
-a{
-	text-decoration: none;
-	color: #757575;
-}
-/*左浮动、右浮动、清除浮动*/
-.lt{float: left;}
-.rt{float: right;}
-.clear:after{
-	content: "";
-	display: block;
-	clear: both;
-}
-/*蓝色部分的内容区*/
-header{
-	width: 100%;
-	height: 500px;
-	background: #008de1;
-}
-header:before,
-main:before,
-main:after,
-header:after{
-	content: "";
-	display: table;
-}
-.container,
-main,
-footer{
-	margin: 0 auto;
-	width: 1200px;
-}
-/*头部导航区*/
-.container nav{
-	padding-top: 25px;
-}
-.container nav h1 img{
-	width: 220px;
-}
-.nav-bar>a,.nav-bar>span{
-	color: #fff;
-}
-.nav-bar>b{
-	border-left: 1px solid #fff;
-}
-.nav-bar>a{
-	padding: 0 10px;
-}
-.nav-bar>a:last-child{
-	padding: 5px 10px;
-	background-color: #5db423;
-	border-radius: 4px;
-}
-/*搜索区*/
+/* 搜索 */
 main{
-	padding-top: 150px;
+  background-image: url("../images/banner.jpg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-main>img{
-	display: block;
-	margin: 0 auto;
+.find{
+  min-width: 600px;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  transform: translateY(-50px);
 }
-div.search{
-	margin: 80px auto;
-	width: 690px;
+.find .col-xs-9{
+  border-left: 1px solid #eee;
 }
-div.search>a{
-	background-color: #fff;
-	padding: 20px 30px;
-	font-size: 18px;
-	color: #464646;
-	position: relative;
+.find #search{
+  border: none;
+  /*border: 1px solid #eee;*/
+  outline: none;
 }
-.search>a>b{
-	border: 6px solid transparent;
-	border-top-color: #999;
-	position: relative;
-	top: 15px;
-	left: 5px;
-}
-.search>a:after{
-	content: "";
-	width: 1px;
-	height: 20px;
-	background-color: #999;
-	position:absolute;
-  bottom:20px;
+.find buttonbutton.btn{
+  position: absolute;
+  width: 100px;
+  height: 50px;
   right: 0;
+  border: none;
+  background-color: yellow;
 }
-.search>form>input{
-	float: left;
-	padding: 23px 30px 20px;
-	font-size: 18px;
-	border: 0;
-	outline: none;
-	width: 420px;
-}
-.search>form>input[type="button"]{
-	margin-left: 10px;
-	width: 150px;
-	height: 64px;
-	background-color: #f74342;
-	color: #fff;
-}
-/*页脚内容*/
-footer{
-	text-align: center;
-	position: relative;
-}
-.footer-header{
-	padding-top: 60px;
-	padding-bottom: 90px;
-	text-align: left;
-	margin: 0 auto;
-	width: 404px;
-}
-/*二维码区域*/
-.code{
-	width: 160px;
-	height: 166px;
-	padding: 15px;
-	border: 1px solid #ddd;
-	position: relative;
-}
-.code img{
-	width: 100%;
-}
-.code span{
-	color: #adadad;
-	position: absolute;
-	font-size: 14px;
-	background-color: #fff;
-	bottom: -8px;
-	left: 35px;
-}
-.code-describe{
-	margin-left: 20px;
-	font-size: 16px;
-	color: #414141;
-	margin-top: 30px;
-}
-.code-describe p{
-	margin: 5px 0;
-}
-.code-describe strong{
-	font-size: 30px;
-	color: #f74342;
-}
-/*公司简介*/
-.footer-main{
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 80px;
-	list-style: none;
-}
-.footer-main>li{
-	float: left;
-	border-right: 1px solid #ddd;
-}
-.footer-main>li:last-child{
-	border-right: none;
-}
-.footer-main>li a{
-	padding: 0 7px;
-}
-footer>p{
-	margin: 10px auto;
-	color: #adadad;
-}
-footer>p>a{
-	color: #adadad;
-}
-footer>p>a:hover{
-	color: #333;
-	text-decoration: underline;
-}
-.footer-footer{
-	display: block;
-	height: 35px;
-	margin-top: 12px;
-}
-.footer-footer img{
-	height: 30px;
+.find .btn:hover{
+  background-color: yellow;
 }
