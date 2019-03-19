@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商家列表</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/takeOut.css">
+    <link rel="stylesheet" href="css/seller.css">
+    <!--IE兼容问题-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/add.js"></script>
+</head>
+<body>
+    <!-- 页面导航 -->
+    <div id="header"></div>
+    <!-- 主体 -->
+    <main>
+        <div class="container">
+            <!--定位信息-->
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="location">
+                        <span>当前位置:</span>
+                        <a href="#" id="address">四川师范大学成龙校区</a>
+                        <a href="#">[切换地区]</a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="hunt">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="search-seller" class="sr-only">搜索商家</label>
+                                <input type="text" class="form-control" id="search-seller" placeholder="搜索商家、美食">
+                            </div>
+                            <a href=""><i class="iconfont icon-sousuo"></i></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--商家分类-->
+            <div class="main-categories">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <span>商家分类:</span>
+                    </div>
+                    <div class="col-xs-11">
+                        <a href="#" class="active">全部商家</a>
+                        <a href="#">美食</a>
+                        <a href="#">快餐便当</a>
+                        <a href="#">特色菜系</a>
+                        <a href="#">异国料理</a>
+                        <a href="#">小吃夜宵</a>
+                        <a href="#">甜品饮品</a>
+                        <a href="#">果蔬生鲜</a>
+                        <a href="#">商店超市</a>
+                        <a href="#">鲜花绿植</a>
+                        <a href="#">医药健康</a>
+                        <a href="#">早餐</a>
+                        <a href="#">午餐</a>
+                        <a href="#">下午茶</a>
+                        <a href="#">晚餐</a>
+                        <a href="#">夜宵</a>
+                    </div>
+                </div>
+            </div>
+            <!--商家-->
+            <div class="row seller"></div>
+        </div>
+        <!-- 没有登录时 -->
+        <!-- <div class="main_list">
+            <p>查看更多商家，请先<a href="#">登录</a></p>
+        </div> -->
+        <!-- 登录时 -->
+    </main>
+    <div id="footer"></div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/seller.js"></script>
+    <script>
+        (function() {
+            var s = document.createElement("script");
+            s.onload = function() {
+                bootlint.showLintReportForCurrentDocument([]);
+            };
+            s.src = "js/bootlint.js";
+            document.body.appendChild(s)
+        })();
+    </script>
+</body>
+</html>

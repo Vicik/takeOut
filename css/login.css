@@ -1,0 +1,40 @@
+nav {
+  z-index: 10;
+}
+main {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+main .container {
+  min-width: 923px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+main img {
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  width: 110%;
+  height: 520px;
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+main .login {
+  margin-top: 100px;
+  padding: 20px 40px 40px 40px;
+  color: #fff;
+  background-color: #ffffff40;
+}
+.login > form > div {
+  color: #fff;
+}
+.login .help-block {
+  color: #DE2121;
+}
+#info {
+  margin-top: 10px;
+  color: #DE2121;
+}
+/*# sourceMappingURL=login.css.map */

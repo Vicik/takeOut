@@ -18,19 +18,39 @@ main{
 .find .col-xs-9{
   border-left: 1px solid #eee;
 }
-.find #search{
-  border: none;
-  /*border: 1px solid #eee;*/
-  outline: none;
+.find .col-xs-9 .form-group{
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
 }
-.find buttonbutton.btn{
+.find .col-xs-9 .form-group [name='aname']{
+  height: 50px;
+}
+.find [name='cid']{
+  padding: 0;
+  height: 45px;
+}
+.find [name='cid']:focus,
+.find [name='aname']:focus{
+  box-shadow: none;
+}
+.find #search{
+  /*height: 50px;*/
+}
+.find button.btn{
   position: absolute;
   width: 100px;
   height: 50px;
   right: 0;
+  color: #fff;
+  border: 1px solid dodgerblue;
+  border-radius: 0;
+  background-color: dodgerblue;
+}
+.find button.btn:focus{
+  color: #fff;
   border: none;
-  background-color: yellow;
 }
 .find .btn:hover{
-  background-color: yellow;
+  background-color: dodgerblue;
 }

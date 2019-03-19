@@ -1,0 +1,37 @@
+nav {
+  z-index: 10;
+}
+main {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+main .container {
+  min-width: 923px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+main img {
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  width: 110%;
+  height: 520px;
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+main .register {
+  margin-top: 50px;
+  padding: 20px 40px 40px 40px;
+  color: #fff;
+  background-color: #ffffff40;
+}
+.register > form > div {
+  color: #fff;
+}
+.form-group .help-block {
+  font-size: 14px;
+  color: #DE2121;
+}
+/*# sourceMappingURL=register.css.map */

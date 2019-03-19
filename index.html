@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>外卖网</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" href="css/bootstrap.css">-->
+		<link rel="stylesheet" href="css/takeOut.css">
+		<link rel="stylesheet" href="css/index.css" />
+		<!--IE兼容问题-->
+		<!--[if lt IE 9]>
+		  <script src="js/html5shiv.min.js"></script>
+		  <script src="js/respond.min.js"></script>
+		<![endif]-->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/add.js"></script>
+	</head>
+	<body>
+		<!-- 导航 -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="#">
+								<img class="nav-img" alt="Brand" src="images/logo.jpg">
+							</a>
+							<p class="navbar-text">创造美好生活</p>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						<div class="nav-text text-right">
+							<a href="#" class="navbar-link">注册</a>
+							<a href="#" class="navbar-link">登录</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--页面主体-->
+		<main class="clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3">
+						<form id="sub">
+							<div class="row find">
+								<div class="col-xs-2">
+									<select class="form-control" name="cid">
+										<option value="0">请选择</option>
+										<option value="201">成都</option>
+										<option value="202">绵阳</option>
+									</select>
+								</div>
+								<div class="col-xs-9">
+									<div class="form-group">
+										<label for="search" class="sr-only"></label>
+										<input type="text" id="search" class="form-control" name="aname" placeholder="输入地址搜索周边美食">
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<button href="" type="button" class="btn btn-default btn-lg">搜索</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xs-3"></div>
+				</div>
+			</div>
+		</main>
+		<!--页脚-->
+		<div id="footer"></div>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/index.js"></script>
+		<script>
+			(function() {
+				var s = document.createElement("script");
+				s.onload = function() {
+					bootlint.showLintReportForCurrentDocument([]);
+				};
+				s.src = "js/bootlint.js";
+				document.body.appendChild(s)
+			})();
+		</script>
+	</body>
+</html>

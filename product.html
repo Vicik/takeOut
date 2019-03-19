@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/takeOut.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!--IE兼容问题-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/add.js"></script>
+</head>
+<body>
+    <!--导航-->
+    <div id="header"></div>
+    <div class="nav-header">
+        <div class="container">
+            <div class="sel">
+                <div class="row"></div>
+            </div>
+        </div>
+    </div>
+    <!--页面主体-->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="shop-header">
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-2">
+                                <a href="" class="active">所有商品</a>
+                            </div>
+                            <div class="col-xs-1 col-sm-2">
+                                <a href="">评价</a>
+                            </div>
+                            <div class="col-xs-1 col-sm-2">
+                                <a href="">资质</a>
+                            </div>
+                            <div class="col-xs-2 hidden-sm"></div>
+                            <div class="col-xs-7 col-sm-6 text-right">
+                                <a href="">默认排序</a>
+                                <a href="">评分<i class="iconfont icon-xiangxia"></i></a>
+                                <a href="">销量<i class="iconfont icon-xiangxia"></i></a>
+                                <a href="">价格<i class="iconfont icon-xiangxia"></i></a>
+                                <a class="shop-display" href="">
+                                    <i class="iconfont icon-wangge" title="以网格显示"></i>
+                                    <i class="iconfont icon-liebiao" title="以列表显示"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--商品分类列表-->
+                    <div class="shop-nav">
+                        <a href="#popular">热销</a>
+                        <a href="#cheap">优惠</a>
+                        <a href="">点餐必读</a>
+                        <a href="">天天特价</a>
+                        <a href="">暖心套餐+++</a>
+                        <a href="">暖心甜粥</a>
+                        <a href="">暖心养生粥</a>
+                        <a href="">暖心素粥</a>
+                        <a href="">暖心海鲜粥</a>
+                        <a href="">暖心面点</a>
+                        <a href="">暖心小吃</a>
+                    </div>
+                    <!--商品详情-->
+                    <div id="popular" class="product">
+                        <h4>热销<small>大家喜欢吃，才叫真好吃。</small></h4>
+                        <div class="row"></div>
+                    </div>
+                </div>
+                <!--侧边栏-->
+                <div class="col-xs-3">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="product" class="sr-only"></label>
+                            <input type="text" id="product" class="form-control" name="pname" placeholder="搜索商家、美食...">
+                        </div>
+                        <a href=""><i class="iconfont icon-sousuo"></i></a>
+                    </form>
+                    <div class="notice">
+                        <h3>商家公告</h3>
+                        <p>本店营业时间为9:00 ~18:00</p>
+                    </div>
+                    <div class="fee">
+                        <h5>配送说明</h5>
+                        <span>配送费¥0.5</span>
+                    </div>
+                    <div class="extra-info">
+                        <p>
+                            <i class="iconfont icon-promisse"></i>
+                            该商户食品安全已投保，食品安全有保障
+                        </p>
+                        <a href="">举报商家</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <!-- 购物车 -->
+    <div class="shop-cart">
+        <h5>
+            购物车
+            <a href="">[清空]</a>
+            <a href=""><i class="iconfont icon-gouwuchejiahaojian rt"></i></a>
+        </h5>
+        <ul></ul>
+        <div class="shop-end">
+            <a href="" class="total">
+                <i class="iconfont icon-qicheqianlian-"></i>
+                <sup></sup>
+                <small>￥<big>35</big></small>
+                <span>|配送费￥<b>2.5</b></span>
+            </a>
+            <a href="" class="closing-cost">去结算></a>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/product.js"></script>
+    <script>
+        (function() {
+            var s = document.createElement("script");
+            s.onload = function() {
+                bootlint.showLintReportForCurrentDocument([]);
+            };
+            s.src = "js/bootlint.js";
+            document.body.appendChild(s)
+        })();
+    </script>
+</body>
+</html>

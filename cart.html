@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/takeOut.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <!--IE兼容问题-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/add.js"></script>
+</head>
+<body>
+    <!-- 页面导航 -->
+    <div id="header"></div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="cart-list">
+                        <div class="list-header">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h4>订单详情</h4>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <a href="">< 返回商家修改</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-info">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <p>商品</p>
+                                </div>
+                                <div class="col-xs-4">
+                                    <p>份数</p>
+                                </div>
+                                <div class="col-xs-3">
+                                    <p>小计(元)</p>
+                                </div>
+                            </div>
+                            <h5>1号购物车</h5>
+                        </div>
+                        <div class="list"></div>
+                        <div class="fee">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <span>配送费</span>
+                                </div>
+                                <div class="col-xs-3 col-xs-offset-4">
+                                    <span class="deliver"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <span>餐盒费</span>
+                                </div>
+                                <div class="col-xs-3 col-xs-offset-4">
+                                    <span class="box"></span>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <div class="row">
+                                    <div class="col-xs-6 col-xs-offset-6">
+                                        <p></p>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="cart-info">
+                        <div class="msg">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <h4>收货地址</h4>
+                                </div>
+                                <div class="col-xs-4 col-xs-offset-4 text-right">
+                                    <a href="">添加新地址</a>
+                                </div>
+                            </div>
+                            <div class="msg-info">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <i class="iconfont icon-ditutubiao"></i>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p>用户姓名 先生 12345678901</p>
+                                        <span>四川省天府广场</span>
+                                    </div>
+                                </div>
+                                <a href="" class="check">修改 ×</a>
+                                <i class="iconfont icon-gouxuan"></i>
+                            </div>
+                            <a href="" class="more">显示更多地址<i class="iconfont icon-down-trangle"></i></a>
+                        </div>
+                        <div class="msg pay">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <h4>付款方式</h4>
+                                </div>
+                                <div class="col-xs-9"></div>
+                            </div>
+                            <div class="msg-info">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <span>在线支付</span>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <span>推荐使用在线支付，不用找零，优惠更多</span>
+                                    </div>
+                                </div>
+                                <i class="iconfont icon-gouxuan"></i>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <h4>其他信息</h4>
+                                </div>
+                                <div class="col-xs-9"></div>
+                            </div>
+                            <div class="msg-info">
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                        <p>订单备注</p>
+                                        <p>餐具选择</p>
+                                    </div>
+                                    <div class="col-xs-10">
+                                        <p><input type="text"></p>
+                                        <select name="">
+                                            <option value="0">未选择</option>
+                                            <option value="1">1份</option>
+                                            <option value="2">2份</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <a class="btn btn-danger btn-lg" type="button">去结算</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        (function() {
+            var s = document.createElement("script");
+            s.onload = function() {
+                bootlint.showLintReportForCurrentDocument([]);
+            };
+            s.src = "js/bootlint.js";
+            document.body.appendChild(s)
+        })();
+    </script>
+</body>
+</html>

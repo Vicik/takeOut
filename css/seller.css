@@ -1,0 +1,91 @@
+body {
+  background: #f5f5f5;
+}
+main {
+  font-size: 14px;
+}
+.container {
+  min-width: 923px;
+}
+.location {
+  height: 34px;
+  font-size: 12px;
+  line-height: 34px;
+}
+.location,
+.hunt {
+  margin-top: 20px;
+}
+.location a:last-child {
+  color: #1989fa;
+}
+#search-seller,
+.form-inline .form-group {
+  width: 100%;
+}
+.form-inline {
+  position: relative;
+}
+.hunt a {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.main-categories {
+  margin: 50px 0 20px 0;
+  background: #fff;
+  padding: 5px 0 5px 10px;
+  border: 1px solid #ddd;
+  border-top-width: 2px;
+  color: #999;
+}
+.main-categories span {
+  display: inline-block;
+  min-width: 100px;
+  padding-top: 10px;
+}
+.main-categories a {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.main-categories a.active {
+  background: #eee;
+}
+.main-categories a:first-child {
+  padding: 10px 15px;
+  background: #eee;
+}
+.main-categories a:hover {
+  background: #eee;
+}
+/* 商家 */
+.main-categories ~ div a > div {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.seller > .col-xs-12 > p {
+  font-size: 24px;
+}
+.seller > .col-xs-12 > p > a {
+  color: #00b3ee;
+}
+.sellers span {
+  font-size: 12px;
+  display: inline-block;
+  padding-top: 5px;
+}
+.sellers h5 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.sellers p {
+  margin-top: 3px;
+}
+.sellers h5 + i {
+  font-size: 12px;
+  color: #fff018;
+}
+/*# sourceMappingURL=seller.css.map */
