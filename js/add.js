@@ -12,7 +12,6 @@ $(function() {
                     <a href="register.html" class="navbar-link">注册</a>
                     <a href="login.html" class="navbar-link">登录</a>
             `);
-
         })
     });
     $('#footer').load('data/footer.php');
